@@ -26,8 +26,14 @@ Description: This function will call the recursive function with the
     'end' being the ending peg.
 '''
 def main() -> None:
-    # Calling the towerOfHanoi function.
-    towerOfHanoi(4, 1, 3, 2)
+    peg_count = int(input("Enter the amount of pegs:"))
+    start_peg = int(input("Enter the starting peg: "))
+    end_peg = int(input("Enter the end peg: "))
+    tmp_peg = int(input("Enter the temporary peg: "))
+
+
+
+    towerOfHanoi(peg_count, start_peg, end_peg, tmp_peg)
 
     # When the program ends it will say that the world ended.
     print("OH NO! THE PRIESTS BEAT THE TOWER OF HANOI!! THE WORLD HAS ENDED!!!!!!")
